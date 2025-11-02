@@ -44,7 +44,7 @@ function renderActivities() {
 
 function deleteActivity(index) {
   const activities = JSON.parse(localStorage.getItem('activities')) || [];
-  activities.splice(index, 1); // Remove activity
+  activities.splice(index, 1); 
   localStorage.setItem('activities', JSON.stringify(activities));
 
   
@@ -52,3 +52,4 @@ function deleteActivity(index) {
 }
 
 renderActivities();
+
